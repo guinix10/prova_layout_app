@@ -57,7 +57,13 @@ class TelaDashboard extends StatelessWidget {
             // Desafio 1: Adicionar o 3º Card (Icons.camera_alt, '45', 'Fotos') com Expanded.
             // Desafio 8: Refatorar esta seção usando GridView.count (grade 2x2).
             // ===================================================================
-            Row(
+            GridView.count(
+              crossAxisCount: 2,
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              crossAxisSpacing: 12,
+              mainAxisSpacing: 12,
+              childAspectRatio: 1.5,
               children: [
                 BlocoEstatistica(
                   icone: Icons.flutter_dash,
@@ -65,15 +71,12 @@ class TelaDashboard extends StatelessWidget {
                   rotulo: 'Aves Vistas',
                   corFundo: Colors.teal.shade100,
                 ),
-                const SizedBox(width: 12.0),
                 BlocoEstatistica(
                   icone: Icons.place,
                   valor: '18',
                   rotulo: 'Locais Visitados',
                   corFundo: Colors.teal.shade50,
                 ),
-                const SizedBox(width: 12.0),
-                // TODO [Desafio 1]: Adicionar aqui o terceiro Card com Expanded (Ícone: Icons.camera_alt, '45', 'Fotos')
                 BlocoEstatistica(
                   icone: Icons.camera_alt,
                   valor: '45',
