@@ -206,7 +206,7 @@ class TelaDashboard extends StatelessWidget {
             // ou textos longos sem controle de quebra de linha/Flexible).
             // Correção: Envolver os textos flexíveis com Expanded/Flexible ou utilizar 
             // SingleChildScrollView / Wrap caso o conteúdo extrapole os limites.
-            // Exemplo de correção aplicada no projeto: Uso de Expanded nos cards do dashboard.
+            // Exemplo de correção applied no projeto: Uso de Expanded nos cards do dashboard.
             // ===================================================================
           ],
         ),
