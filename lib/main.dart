@@ -229,6 +229,15 @@ class TelaDashboard extends StatelessWidget {
             // Demonstrar/comprovar a ocorrência e correção de um erro de overflow
             // (RenderFlex overflow) via prints ou bloco comentado.
             // ===================================================================
+            // ===================================================================
+            // 📍 DESAFIO 4 (1,5 ponto):
+            // Ocorrência: Ocorre RenderFlex overflow quando widgets filhos em Row 
+            // ultrapassam a largura horizontal da tela (ex: adicionar muitos Expanded 
+            // ou textos longos sem controle de quebra de linha/Flexible).
+            // Correção: Envolver os textos flexíveis com Expanded/Flexible ou utilizar 
+            // SingleChildScrollView / Wrap caso o conteúdo extrapole os limites.
+            // Exemplo de correção aplicada no projeto: Uso de Expanded nos cards do dashboard.
+            // ===================================================================
           ],
         ),
       ),
