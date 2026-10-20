@@ -96,6 +96,23 @@ class TelaDashboard extends StatelessWidget {
                 ),
                 const SizedBox(width: 12.0),
                 // TODO [Desafio 1]: Adicionar aqui o terceiro Card com Expanded (Ícone: Icons.camera_alt, '45', 'Fotos')
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(16.0),
+                    decoration: BoxDecoration(
+                      color: Colors.teal.shade50,
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Column(
+                      children: const [
+                        Icon(Icons.camera_alt, size: 36, color: Colors.teal),
+                        SizedBox(height: 8),
+                        Text('45', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
+                        Text('Fotos', style: TextStyle(fontSize: 12, color: Colors.grey)),
+                      ],
+                    ),
+                  ),
+                ),
               ],
             ),
             const SizedBox(height: 24.0),
@@ -116,7 +133,7 @@ class TelaDashboard extends StatelessWidget {
               clipBehavior: Clip.none,
               children: [
                 // TODO [Desafio 6]: Substituir o Container simples por um Card do Material com elevation: 4
-  
+ 
                 Container(
                   width: double.infinity,
                   padding: const EdgeInsets.all(20.0),
